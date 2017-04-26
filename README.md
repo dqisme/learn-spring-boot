@@ -8,3 +8,4 @@
 1. add gradle build output to git ignore
 1. create file for greeting feature
 1. add greeting feature
+1. add cucumber config to gradle build config, refer to [this example](https://github.com/cucumber/cucumber-jvm/blob/master/examples/java-gradle/build.gradle)
