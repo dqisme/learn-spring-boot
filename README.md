@@ -7,3 +7,4 @@
 1. add initial gradle build config
 1. add gradle build output to git ignore
 1. create file for greeting feature
+1. add greeting feature
