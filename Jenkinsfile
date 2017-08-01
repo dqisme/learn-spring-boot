@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'curl -I https://www.baidu.com'
+        sh 'curl -I https://www.google.com'
       }
     }
     stage('test') {
