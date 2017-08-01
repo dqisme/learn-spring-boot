@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'openjdk:8-jre'
-      args '--env https_proxy=docker.for.mac.localhost:8123'
+      args '--env https_proxy=docker.for.mac.localhost:8123 HTTPS_PROXY=docker.for.mac.localhost:8123'
     }
     
   }
