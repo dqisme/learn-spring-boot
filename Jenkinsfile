@@ -19,4 +19,8 @@ pipeline {
       }
     }
   }
+  environment {
+    https_proxy = 'docker.for.mac.localhost:8123'
+    HTTPS_PROXY = 'docker.for.mac.localhost:8123'
+  }
 }
