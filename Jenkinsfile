@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hello, JDK'
-                sh 'java -version'
+                sh './gradlew build'
+            }
+        }
+        stage('test') {
+            steps {
+                sh './gradlew cucumber'
             }
         }
     }
