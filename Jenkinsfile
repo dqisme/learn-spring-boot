@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'curl -I https://services.gradle.org/distributions/gradle-3.5-rc-2-bin.zip'
+        sh 'curl -I https://www.baidu.com'
       }
     }
     stage('test') {
