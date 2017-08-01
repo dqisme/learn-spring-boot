@@ -11,7 +11,7 @@ pipeline {
         sh 'ls'
         sh 'env'
         sh 'pwd'
-        sh 'sleep 1'
+        sleep 1
         sh 'curl -I https://www.baidu.com'
       }
     }
