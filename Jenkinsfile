@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'env'
+        sh 'sleep infinity'
         sh 'curl -I https://www.baidu.com'
       }
     }
