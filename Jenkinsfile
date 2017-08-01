@@ -1,18 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'openjdk:8-jre'
-    }
-    
-  }
+  agent any
   stages {
     stage('build') {
       steps {
-        sh 'ls'
-        sh 'env'
-        sh 'pwd'
-        sleep 1000
-        sh 'curl -I https://www.baidu.com'
+        sh './gradlew build'
       }
     }
     stage('test') {
