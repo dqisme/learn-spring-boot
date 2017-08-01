@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'openjdk:8-jre'
-      args '--env https_proxy=docker.for.mac.localhost:8123'
-    }
-    
-  }
+  agent any
   stages {
     stage('build') {
       steps {
