@@ -23,4 +23,7 @@ pipeline {
       }
     }
   }
+  environment {
+    GRADLE_OPTS = '-Dhttps.proxyHost=docker.for.mac.localhost -Dhttps.proxyPort=8123'
+  }
 }
