@@ -8,12 +8,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sleep 60
         sh 'whoami'
         sh 'env'
         sh 'curl -I http://docker.for.mac.localhost:8123'
         sh 'curl -I https://www.baidu.com'
         catchError() {
+          sh 'sleep 1000'
           sh 'export GRADLE_OPTS="-Dhttps.proxyHost=docker.for.mac.localhost -Dhttps.proxyPort=8123"; ./gradlew clean'
         }
         
