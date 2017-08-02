@@ -28,5 +28,6 @@ pipeline {
   }
   environment {
     GRADLE_OPTS = '-Dhttps.proxyHost=docker.for.mac.localhost -Dhttps.proxyPort=8123'
+    JAVA_OPTS = '-XX:ErrorFile=/var/log/java/hs_err_pid%p.log'
   }
 }
