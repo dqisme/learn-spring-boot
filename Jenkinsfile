@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'whoami'
+        sh 'env'
         sh 'curl -I http://docker.for.mac.localhost:8123'
         sh 'curl -I https://www.baidu.com'
         catchError() {
